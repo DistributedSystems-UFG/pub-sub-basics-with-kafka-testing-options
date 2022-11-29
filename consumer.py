@@ -13,5 +13,5 @@ except:
   
 consumer.subscribe([topic])
 for msg in consumer:
-    print (type(msg.value))
-    print (msg.key)
+    print (msg.value.decode())
+    print (msg.key.decode())
