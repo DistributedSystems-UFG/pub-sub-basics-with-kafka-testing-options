@@ -14,4 +14,4 @@ except:
 consumer.subscribe([topic])
 for msg in consumer:
     print ('Message: ' + msg.value.decode())
-    print ('Key: ' + bytes(msg.key).decode())
+    print ('Key: ' + str(msg.key))
